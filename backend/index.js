@@ -4,6 +4,7 @@ const port=3000;
 const {createTodo, updateTodo} = require("./types");
 const { todo } =require("./db");
 const zod = require("zod");
+const cors = require("cors");
 
 app.use(express.json());
 
