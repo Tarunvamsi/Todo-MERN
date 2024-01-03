@@ -25,7 +25,10 @@ export function CreateTodo() {
                     title : title,
                     description: description
 
-                })
+                }), 
+                headers:{
+                    "Content-type" : "application/json"
+                }
 
             })
                 .then(async function(res){
